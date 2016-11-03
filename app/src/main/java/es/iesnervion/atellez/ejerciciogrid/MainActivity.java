@@ -20,7 +20,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         //Revisar esto
         GridView gv = (GridView) findViewById(R.id.grid);
-        gv.setAdapter(new ArrayAdapter<>(this,R.layout.cell,personas));
+        gv.setAdapter(new ArrayAdapter<String>(this,R.layout.cell,personas));
         gv.setOnItemClickListener(this);
     }
 
